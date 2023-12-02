@@ -1,0 +1,113 @@
+/* SignupForm.css */
+
+/* SignupForm.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('./bg1.jpg') center/cover no-repeat fixed;
+  font-family: 'Arial', sans-serif;
+  animation: backgroundAnimation 15s infinite;
+  transition: background-image 1s ease-in-out;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 100% 0;
+  }
+  25.01% {
+    background-image: url('./bg2.jpg');
+  }
+  50% {
+    background-position: 0 0;
+  }
+  50.01% {
+    background-image: url('./bg3.jpg');
+  }
+  75% {
+    background-position: 100% 0;
+  }
+  75.01% {
+    background-image: url('./bg1.jpg');
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.main-heading {
+  font-size: 2.5em; /* Adjust the font size as needed */
+  color: #333; /* Set the text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+  padding-bottom: 30px;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.signup-form {
+  background-color: rgba(255, 255, 255, 0.8); /* Added some transparency for better visibility */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px; /* Adjusted padding for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.signup-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid transparent; /* Add a transparent border initially */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease; /* Include border-color in the transition */
+}
+
+.signup-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  border-color: #ffd700; /* Set the border color to golden on hover */
+}
+
+b.signup-button:active {
+  transform: scale(0.95);
+  border-color: #ffd700; 
+}
+.signup-google {
+  margin-top: 15px;
+}
+
+.signup-google button {
+  background-color: #45a049;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-google button:hover {
+  background-color: #357ae8;
+}
+
